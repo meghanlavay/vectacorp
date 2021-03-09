@@ -1,1 +1,39 @@
-@mixin navigation
+@mixin navMenu ($width: 540px, $height: 190px) {
+    width: $width;
+    height: $height;
+    float: left;
+    text-align: right;
+}
+
+@mixin logoImage ($image) {
+    background: url($image) no-repeat 0 50px;
+    width: 400px;
+    height: 190px;
+    float: left;
+    display: block;
+    margin: 0;
+}
+
+@mixin header {
+    width: inherit;
+    clear: both;
+    text-align: center;
+    padding-top: 40px;
+}
+
+@mixin headline {
+    width: 100%;
+    height: 130px;
+    background: $heading-color;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin footer ($width: 100%, $height: 150px) {
+    width: $width;
+    height: $height;
+    background: $footer-color;
+    text-align: center;
+    color: $accent-color;
+    padding-top: 50px;
+}

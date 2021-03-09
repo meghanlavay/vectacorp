@@ -1,0 +1,126 @@
+/* BASIC STYLES */
+body {
+    font-family: $font-stack;
+    font-size: 1em;
+    line-height: 2em;
+    background: url('#{$imagePath}/bg.gif') $accent-color repeat-x;
+    margin: 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+// /* HEADER */
+header {
+    @include header;
+}
+
+header img {
+    max-width: 100%;
+    height:auto;
+}
+
+header h1 {
+    color: $heading-color;
+    font-weight: $thin;
+    font-size: 4em;
+    line-height: 0;
+}
+
+header h2 {
+    color: $accent-color;
+    font-weight: $heavy;
+    font-size: 2.5em;
+    line-height: 0;
+    margin-bottom: 70px;
+}
+
+header h3 {
+    color: $sub-headings;
+    font-weight: $normal;
+    font-size: 2em;
+    line-height: 0;
+    margin-bottom: 50px;
+}
+
+/* CONTENT */
+#headline {
+    @include headline;
+}
+
+#headline h1 {
+    color: $accent-color;
+    font-size: 2.5em;
+    font-weight: $thin;
+    padding-top: 50px;
+}
+
+#content {
+    width: 940px;
+    margin: 20px auto;
+}
+
+#content h3 {
+    color: $sub-headings;
+    font-size: 2em;
+    font-weight: $normal;
+}
+
+#content #products {
+    width: 460px;
+    float: left;
+}
+
+#content #products img {
+    float: left;
+    margin-right: 20px;
+}
+
+#content #products article { margin-bottom: 40px; }
+
+#content #products h4 { line-height: 1em; }
+
+#content #testimonials {
+    width: 460px;
+    float: right;
+}
+
+/* FOOTER */
+.greybar {
+    width: 100%;
+    height: 90px;
+    background: $footer-bar;
+    clear: both;
+    padding-top: 30px;
+}
+
+footer {
+    @include footer;
+}
+
+.social-media {
+    margin: 0 auto;
+    width: 165px;
+}
+
+.social-media div {
+    float: left;
+    margin-right: 5px;
+}
+
+.social-media a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+}
+
+.social-media div.one { background: url('#{$imagePath}/social-media.png') 0 0; }
+
+.social-media div.two { background: url('#{$imagePath}/social-media.png') -38px 0; }
+
+.social-media div.three { background: url('#{$imagePath}/social-media.png') -76px 0; }
+
+.social-media div.four { background: url('#{$imagePath}/social-media.png') -114px 0; }

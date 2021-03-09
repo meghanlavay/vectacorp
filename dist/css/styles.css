@@ -1,6 +1,6 @@
 /* BASIC STYLES */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1em;
   line-height: 2em;
   background: url("/images/bg.gif") #FFF repeat-x;
@@ -11,39 +11,6 @@ main {
   margin: 0 auto;
   padding: 0 10px; }
 
-/* NAVIGATION */
-figure {
-  width: 400px;
-  height: 190px;
-  background: url("/images/logo.png") no-repeat 0 50px;
-  float: left;
-  display: block;
-  margin: 0; }
-
-nav {
-  width: 540px;
-  height: 190px;
-  float: left;
-  text-align: right; }
-
-nav ul {
-  list-style-type: none;
-  margin-top: 95px; }
-
-nav ul li {
-  display: inline;
-  font-size: 0.8em;
-  margin-right: 10px; }
-
-nav ul li a {
-  color: #E65C43;
-  text-decoration: none;
-  letter-spacing: -0.01em; }
-
-nav ul li a:hover {
-  color: #FFF; }
-
-/* HEADER */
 header {
   width: inherit;
   clear: both;
@@ -125,7 +92,7 @@ header h3 {
 
 footer {
   width: 100%;
-  height: 120px;
+  height: 150px;
   background: #30353D;
   text-align: center;
   color: #FFF;
@@ -157,10 +124,37 @@ footer {
 .social-media div.four {
   background: url("/images/social-media.png") -114px 0; }
 
+figure {
+  background: url("/images/logo.png") no-repeat 0 50px;
+  width: 400px;
+  height: 190px;
+  float: left;
+  display: block;
+  margin: 0; }
+
+nav {
+  width: 540px;
+  height: 190px;
+  float: left;
+  text-align: right; }
+  nav ul {
+    list-style-type: none;
+    margin-top: 95px; }
+    nav ul li {
+      display: inline;
+      font-size: 0.8em;
+      margin-right: 10px; }
+  nav a {
+    color: #E65C43;
+    text-decoration: none;
+    letter-spacing: -0.01em; }
+    nav a:hover {
+      color: #FFF; }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 959px) {
   main {
-    width: 768px; }
+    width: 81.70213%; }
   figure {
     width: inherit;
     height: 140px;
