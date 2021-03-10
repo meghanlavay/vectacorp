@@ -11,6 +11,15 @@ main {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    @include break(959px) {
+        width: 768px; 
+    }
+    @include break(767px) {
+        width: 460px;
+    }
+    @include break(459px) {
+        width: 300px; 
+    }
 }
 // /* HEADER */
 header {
@@ -20,6 +29,12 @@ header {
 header img {
     max-width: 100%;
     height:auto;
+    @include break(767px) {
+        margin-bottom: 100px;
+    }
+    @include break(459px) {
+        margin-bottom: 80px;
+    }
 }
 
 header h1 {
@@ -27,14 +42,36 @@ header h1 {
     font-weight: $thin;
     font-size: 4em;
     line-height: 0;
+    @include break(959px) {
+        font-size: 3em; 
+    }
+    @include break(767px) {
+        font-size: 2em;
+    }
+}
+
+header h1:first-child {
+    @include break(459px) {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
 }
 
 header h2 {
     color: $accent-color;
     font-weight: $heavy;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 0;
     margin-bottom: 70px;
+    @include break(959px) {
+        font-size: 1.5em; 
+    }
+    @include break(767px) {
+        font-size: 1em;
+    }
+    @include break(459px) {
+        font-size: 1.4em;
+    }
 }
 
 header h3 {
@@ -43,6 +80,13 @@ header h3 {
     font-size: 2em;
     line-height: 0;
     margin-bottom: 50px;
+    @include break(767px) {
+        font-size: 1.5em;
+    }
+    @include break(459px) {
+        color: $accent-color;
+        font-size: 1em;
+    }
 }
 
 /* CONTENT */
@@ -55,22 +99,51 @@ header h3 {
     font-size: 2.5em;
     font-weight: $thin;
     padding-top: 50px;
+    @include break(767px) {
+        font-size: 2em;
+        padding-top: 50px;
+    }
+    @include break(459px) {
+        font-size: 1.5em;
+        padding-top: 30px;
+    }
+}
+
+article img {
+    @include break(459px) {
+    display: none;
+    }
 }
 
 #content {
     width: 940px;
     margin: 20px auto;
+    @include break(959px) {
+        width: inherit; 
+    }
 }
 
 #content h3 {
     color: $sub-headings;
     font-size: 2em;
     font-weight: $normal;
+    @include break(459px) {
+        font-size: 1.6em;
+    }
 }
 
 #content #products {
     width: 460px;
     float: left;
+    @include break(959px) {
+        width: 46%;
+        margin:0 2%;
+    }
+    @include break(767px) {
+        width: 96%;
+        margin: 0 2%;
+        float: none;
+    }
 }
 
 #content #products img {
@@ -85,6 +158,21 @@ header h3 {
 #content #testimonials {
     width: 460px;
     float: right;
+    @include break(959px) {
+        width: 46%;
+        margin:0 2%;
+    }
+    @include break(767px) {
+        width: 96%;
+        margin: 0 2%;
+        float: none;
+    }
+}
+
+select { 
+    @include break(459px) {
+        width: 95%;
+    }
 }
 
 /* FOOTER */
@@ -94,10 +182,23 @@ header h3 {
     background: $footer-bar;
     clear: both;
     padding-top: 30px;
+    @include break(459px) {
+        display: none;
+    }
 }
 
 footer {
     @include footer;
+    @include break(459px) {
+        text-align: center;
+    }
+}
+
+footer p, footer img {
+    @include break(459px) {
+        float: none;
+        margin: 0;
+    }
 }
 
 .social-media {
@@ -124,3 +225,5 @@ footer {
 .social-media div.three { background: url('#{$imagePath}/social-media.png') -76px 0; }
 
 .social-media div.four { background: url('#{$imagePath}/social-media.png') -114px 0; }
+    
+

@@ -10,6 +10,15 @@ main {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px; }
+  @media (max-width: 959px) {
+    main {
+      width: 768px; } }
+  @media (max-width: 767px) {
+    main {
+      width: 460px; } }
+  @media (max-width: 459px) {
+    main {
+      width: 300px; } }
 
 header {
   width: inherit;
@@ -20,19 +29,45 @@ header {
 header img {
   max-width: 100%;
   height: auto; }
+  @media (max-width: 767px) {
+    header img {
+      margin-bottom: 100px; } }
+  @media (max-width: 459px) {
+    header img {
+      margin-bottom: 80px; } }
 
 header h1 {
   color: #E65C43;
   font-weight: 100;
   font-size: 4em;
   line-height: 0; }
+  @media (max-width: 959px) {
+    header h1 {
+      font-size: 3em; } }
+  @media (max-width: 767px) {
+    header h1 {
+      font-size: 2em; } }
+
+@media (max-width: 459px) {
+  header h1:first-child {
+    font-size: 1.4em;
+    margin-bottom: 20px; } }
 
 header h2 {
   color: #FFF;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 1.5em;
   line-height: 0;
   margin-bottom: 70px; }
+  @media (max-width: 959px) {
+    header h2 {
+      font-size: 1.5em; } }
+  @media (max-width: 767px) {
+    header h2 {
+      font-size: 1em; } }
+  @media (max-width: 459px) {
+    header h2 {
+      font-size: 1.4em; } }
 
 header h3 {
   color: #666;
@@ -40,6 +75,13 @@ header h3 {
   font-size: 2em;
   line-height: 0;
   margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    header h3 {
+      font-size: 1.5em; } }
+  @media (max-width: 459px) {
+    header h3 {
+      color: #FFF;
+      font-size: 1em; } }
 
 /* CONTENT */
 #headline {
@@ -54,19 +96,46 @@ header h3 {
   font-size: 2.5em;
   font-weight: 100;
   padding-top: 50px; }
+  @media (max-width: 767px) {
+    #headline h1 {
+      font-size: 2em;
+      padding-top: 50px; } }
+  @media (max-width: 459px) {
+    #headline h1 {
+      font-size: 1.5em;
+      padding-top: 30px; } }
+
+@media (max-width: 459px) {
+  article img {
+    display: none; } }
 
 #content {
   width: 940px;
   margin: 20px auto; }
+  @media (max-width: 959px) {
+    #content {
+      width: inherit; } }
 
 #content h3 {
   color: #666;
   font-size: 2em;
   font-weight: 400; }
+  @media (max-width: 459px) {
+    #content h3 {
+      font-size: 1.6em; } }
 
 #content #products {
   width: 460px;
   float: left; }
+  @media (max-width: 959px) {
+    #content #products {
+      width: 46%;
+      margin: 0 2%; } }
+  @media (max-width: 767px) {
+    #content #products {
+      width: 96%;
+      margin: 0 2%;
+      float: none; } }
 
 #content #products img {
   float: left;
@@ -81,6 +150,19 @@ header h3 {
 #content #testimonials {
   width: 460px;
   float: right; }
+  @media (max-width: 959px) {
+    #content #testimonials {
+      width: 46%;
+      margin: 0 2%; } }
+  @media (max-width: 767px) {
+    #content #testimonials {
+      width: 96%;
+      margin: 0 2%;
+      float: none; } }
+
+@media (max-width: 459px) {
+  select {
+    width: 95%; } }
 
 /* FOOTER */
 .greybar {
@@ -89,6 +171,9 @@ header h3 {
   background: #F5F6F6;
   clear: both;
   padding-top: 30px; }
+  @media (max-width: 459px) {
+    .greybar {
+      display: none; } }
 
 footer {
   width: 100%;
@@ -97,6 +182,14 @@ footer {
   text-align: center;
   color: #FFF;
   padding-top: 50px; }
+  @media (max-width: 459px) {
+    footer {
+      text-align: center; } }
+
+@media (max-width: 459px) {
+  footer p, footer img {
+    float: none;
+    margin: 0; } }
 
 .social-media {
   margin: 0 auto;
@@ -131,108 +224,52 @@ figure {
   float: left;
   display: block;
   margin: 0; }
+  @media (max-width: 959px) {
+    figure {
+      width: inherit;
+      height: 140px;
+      float: none;
+      background-position: center; } }
+  @media (max-width: 459px) {
+    figure {
+      background-size: contain;
+      height: 100px; } }
 
 nav {
   width: 540px;
   height: 190px;
   float: left;
   text-align: right; }
+  @media (max-width: 959px) {
+    nav {
+      width: inherit;
+      height: 50px;
+      float: none;
+      text-align: center; } }
+  @media (max-width: 459px) {
+    nav {
+      margin-bottom: 40px !important; } }
   nav ul {
     list-style-type: none;
     margin-top: 95px; }
+    @media (max-width: 959px) {
+      nav ul {
+        margin-top: 0; } }
     nav ul li {
       display: inline;
       font-size: 0.8em;
       margin-right: 10px; }
+      @media (max-width: 959px) {
+        nav ul li {
+          font-size: 1em;
+          margin: 0 10px; } }
+      @media (max-width: 767px) {
+        nav ul li {
+          font-size: 0.8em;
+          margin: 0 5px; } }
   nav a {
     color: #E65C43;
     text-decoration: none;
     letter-spacing: -0.01em; }
     nav a:hover {
       color: #FFF; }
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 959px) {
-  main {
-    width: 81.70213%; }
-  figure {
-    width: inherit;
-    height: 140px;
-    float: none;
-    background-position: center; }
-  nav {
-    width: inherit;
-    height: 50px;
-    float: none;
-    text-align: center; }
-  nav ul {
-    margin-top: 0; }
-  nav ul li {
-    font-size: 1em;
-    margin: 0 10px; }
-  header h1 {
-    font-size: 3em; }
-  header h2 {
-    font-size: 1.5em; }
-  #content {
-    width: inherit; }
-  #content #products,
-  #content #testimonials {
-    width: 46%;
-    margin: 0 2%; } }
-
-@media screen and (max-width: 767px) {
-  main {
-    width: 460px; }
-  nav ul li {
-    font-size: 0.8em;
-    margin: 0 5px; }
-  header h1 {
-    font-size: 2em; }
-  header h2 {
-    font-size: 1em; }
-  header img {
-    margin-bottom: 100px; }
-  header h3 {
-    font-size: 1.5em; }
-  #headline h1 {
-    font-size: 2em;
-    padding-top: 50px; }
-  #content #products,
-  #content #testimonials {
-    width: 96%;
-    margin: 0 2%;
-    float: none; } }
-
-@media screen and (max-width: 459px) {
-  main {
-    width: 300px; }
-  figure {
-    background-size: contain;
-    height: 100px; }
-  nav {
-    margin-bottom: 40px !important; }
-  select {
-    width: 95%; }
-  #headline h1 {
-    font-size: 1.5em;
-    padding-top: 30px; }
-  header img {
-    margin-bottom: 80px; }
-  header h1:first-child {
-    font-size: 1.4em;
-    margin-bottom: 20px; }
-  header h2 {
-    font-size: 1.4em; }
-  header h3 {
-    color: #FFF;
-    font-size: 1em; }
-  #content h3 {
-    font-size: 1.6em; }
-  .greybar, article img {
-    display: none; }
-  footer {
-    text-align: center; }
-  footer p, footer img {
-    float: none;
-    margin: 0; } }
