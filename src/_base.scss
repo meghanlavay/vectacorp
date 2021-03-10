@@ -77,15 +77,16 @@ header h2 {
 header h3 {
     color: $sub-headings;
     font-weight: $normal;
-    font-size: 2em;
+    font-size: $h3fontSize;
     line-height: 0;
     margin-bottom: 50px;
     @include break(767px) {
-        font-size: 1.5em;
+        // ARITHMETIC OPERATOR
+        font-size: ($h3fontSize - .5em);
     }
     @include break(459px) {
         color: $accent-color;
-        font-size: 1em;
+        font-size: ($h3fontSize - 1em);
     }
 }
 

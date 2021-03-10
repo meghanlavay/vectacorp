@@ -5,7 +5,7 @@
     text-align: right;
 }
 
-@mixin logoImage ($image, $width:400px, $height: 190px) {
+@mixin logoImage ($image, $width: 400px, $height: 190px) {
     background: url($image) no-repeat 0 50px;
     width: $width;
     height: $height;
